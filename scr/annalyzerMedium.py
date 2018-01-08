@@ -66,6 +66,8 @@ idx = range(47)
 cols = ['Anno', 'Acumulado', 'NumVuelos', 'Media']
 data = pd.DataFrame(index=idx, columns=cols)
 
+
+
 # Volcado de los datos. No puedo confiar en que vengan ordenados
 
 # Inicializacion de la matriz
@@ -94,6 +96,8 @@ while (numAnno < 49):
     numAnno = numAnno + 1
 
 print(data)
+
+data.to_csv("Airplane_CrashesOUT.csv")
 
 print("****************")
 print("Media: %f" % stats.mean(listaMedias))

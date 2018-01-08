@@ -92,6 +92,7 @@ while (numAnno < 49):
     numAnno = numAnno + 1
 
 print(data)
+data.to_csv("Airplane_CrashesOUT.csv")
 
 print("****************")
 print("Media: %f" % stats.mean(listaMedias))
